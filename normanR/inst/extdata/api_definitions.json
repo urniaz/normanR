@@ -1,0 +1,23 @@
+{
+  "modules": {
+    "Substance": "susdat",
+    "Ecotoxicology": "ecotox",
+    "Chemical Occurrence": "empodat",
+    "Passive Sampling": "passive"
+  },
+  "parameters": {
+    "Norman SusDat ID": "nsid",
+    "CAS Registry Number": "casrn",
+    "International Chemical Identifier Key" :"inchikey",
+    "Country Alpha-2 code": "country",
+    "Ecosystem/matrix ID": "matrix",
+    "Empodat ID or range": "id"
+  },
+  "patterns": {
+    "YEAR - Extracts the first 4 digits": "^[0-9]{4}",
+    "YEAR_MONTH - Extracts year and month YYYY-DD": "^[0-9]{4}-[0-9]{2}",
+    "DATE_ISO - Matches a full ISO date YYYY-MM-DD": "^[0-9]{4}-[0-9]{2}-[0-9]{2}",
+    "CAS_PREFIX - Extracts the first part of a CAS number before the first hyphen": "^[0-9]+(?=-)",
+    "COUNTRY_CODE - Matches standard Alpha-2 uppercase country codes": "^[A-Z]{2}$"
+  }
+}

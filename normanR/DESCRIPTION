@@ -1,0 +1,20 @@
+Package: normanR
+Title: Retrieve Data from Norman Network REST API
+Version: 1.0.77
+Authors@R: 
+    c(person("Rafal", "Urniaz", comment = c(ORCID = "0000-0003-0192-2165"),
+		  email = "rafal.urniaz@cantab.net", role = c("aut", "cre")))
+Description: 
+     Retrieve Data from Norman Network REST API
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    httr2, jsonlite, magrittr
+Suggests: testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/urniaz/normanR
+BugReports: https://github.com/urniaz/normanR/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
