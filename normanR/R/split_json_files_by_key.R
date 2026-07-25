@@ -18,6 +18,7 @@
 #' The function creates the output directory if it does not exist. Filenames are 
 #' generated using the pattern: original_name.json.
 #'
+#' @importFrom stats na.omit
 #' @export
 split_json_files_by_key <- function(input_dir, output_dir, split_key, data_path = NULL) {
   

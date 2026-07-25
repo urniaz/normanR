@@ -6,6 +6,8 @@
 #' @param pattern Character (Regex). A pattern to extract. If NULL, splits by full value.
 #' @param data_path Character. The element in the JSON containing the records list.
 #'
+#' @importFrom stats na.omit
+#'
 #' @export
 split_json_files_by_pattern <- function(input_dir, output_dir, split_key, pattern = NULL, data_path = NULL) {
   

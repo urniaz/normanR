@@ -1,20 +1,23 @@
 Package: normanR
-Title: Retrieve Data from Norman Network REST API
-Version: 1.0.77
+Title: Client for the Norman Network REST API
+Version: 1.3.77
 Authors@R: 
     c(person("Rafal", "Urniaz", comment = c(ORCID = "0000-0003-0192-2165"),
 		  email = "rafal.urniaz@cantab.net", role = c("aut", "cre")))
-Description: 
-     Retrieve Data from Norman Network REST API
-License: MIT + file LICENSE
+Description: Provides a programmatic interface to interact with the Norman 
+    Network REST API. The package enables users to easily query, retrieve, 
+    and parse environmental chemistry data, emerging substances lists, and 
+    mass spectrometry workflows. All data frames are structured to facilitate 
+    subsequent environmental data analysis and ecotoxicological modeling.
+License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports:
-    httr2, jsonlite, magrittr
-Suggests: testthat (>= 3.0.0)
+    httr2, jsonlite
+Suggests: testthat (>= 3.0.0), knitr
 VignetteBuilder: knitr
 URL: https://github.com/urniaz/normanR
 BugReports: https://github.com/urniaz/normanR/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
