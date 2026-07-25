@@ -4,11 +4,11 @@ Version: 1.3.77
 Authors@R: 
     c(person("Rafal", "Urniaz", comment = c(ORCID = "0000-0003-0192-2165"),
 		  email = "rafal.urniaz@cantab.net", role = c("aut", "cre")))
-Description: Provides a programmatic interface to interact with the Norman 
-    Network REST API. The package enables users to easily query, retrieve, 
-    and parse environmental chemistry data, emerging substances lists, and 
-    mass spectrometry workflows. All data frames are structured to facilitate 
-    subsequent environmental data analysis and ecotoxicological modeling.
+Description: Offers a programmatic interface to the NORMAN Network REST API,
+    facilitating the systematic query, retrieval, and parsing of environmental
+    chemistry data, emerging substance registries, and mass spectrometry workflows.
+    All data structures are tailored to support downstream environmental data 
+    analysis and ecotoxicological modelling.
 License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
