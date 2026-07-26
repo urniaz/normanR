@@ -1,7 +1,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/urniaz/normanR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/urniaz/normanR/actions)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1155862583.svg)](https://doi.org/10.5281/zenodo.21611983)
 <!-- badges: end -->
 
 # normanR: An R client for the Network Database System REST API
