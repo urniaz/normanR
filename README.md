@@ -58,3 +58,19 @@ data_cas <- get_norman_data(
 
 data_cas$`Compound name`
 ```
+
+---
+
+## Software Metadata (SoftwareX Requirement)
+
+| Metadata element | Description |
+| :--- | :--- |
+| **Current Code Version** | `1.3.77` |
+| **Permanent Code Repository** | [https://github.com/urniaz/normanR](https://github.com/urniaz/normanR) |
+| **Legal Code License** | GNU General Public License v3.0 (GPL-3) |
+| **Code Versioning System** | Git |
+| **Software Language** | R (>= 4.1.0) |
+| **Dependencies** | `httr2`, `jsonlite` |
+| **Testing Framework** | `testthat` (>= 3.0.0) |
+
+---
