@@ -48,20 +48,13 @@ install.packages("normanR")
 ```r
 library(normanR)
 
-# Query substance data using a CAS Registry Number
-susdat_data <- get_norman_data(
+# Fetch substance data by CAS number using the core function
+data_cas <- get_norman_data(
   module = "susdat",
   parameter = "casrn",
   value = "1490-04-6",
   format = "json"
 )
 
-# Extract nested JSON fields into a clean data.frame
-fields <- c("id", "Name", "City", "Value")
-df <- extract_norman_fields(
-  data_list = susdat_data$Data, 
-  field_names = fields
-)
-
-head(df)
+data_cas$`Compound name`
 ```
