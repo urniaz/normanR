@@ -1,0 +1,27 @@
+---
+title: "Getting Started with normanR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with normanR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette demonstrates how to retrieve chemical and ecotoxicological data from the Norman Network REST API using the core get_norman_data() function across its supported modules (susdat, ecotox, empodat, and passive). Additional package features include batch querying (get_norman_data_multi(), get_norman_empodat_batch_data()), flattening nested JSON outputs into data frames (extract_norman_fields()), loading API metadata definitions (load_api_definitions()), and partitioning local JSON files into subfolders (split_json_files_by_key(), split_json_files_by_pattern()).
+
+```{r}
+library(normanR)
+
+# Fetch substance data by CAS number using the core function
+data_cas <- get_norman_data(
+  module = "susdat",
+  parameter = "casrn",
+  value = "1490-04-6",
+  format = "json"
+)
+
+data_cas$`Compound name`
+
+```
+
+
