@@ -51,4 +51,3 @@ jobs:
         with:
           working-directory: normanR
           upload-snapshots: true
-          build_args: '--no-manual --compact-vignettes=gs+qpdf'
