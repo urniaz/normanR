@@ -21,8 +21,6 @@ The package enables researchers in environmental chemistry and ecotoxicology to 
 * **Offline File Organization (`split_json_files_by_key`, `split_json_files_by_pattern`):** Partition bulk offline JSON files into structured subdirectories based on specific field keys or regular expressions.
 * **API Metadata Lookup (`load_api_definitions`):** Load API dictionary definitions from local JSON storage.
 
----
-
 ## Installation
 
 You can install the development version of `normanR` directly from GitHub using `devtools` or `remotes`:
