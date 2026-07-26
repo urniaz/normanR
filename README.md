@@ -61,7 +61,7 @@ data_cas$`Compound name`
 
 ---
 
-## Software Metadata (SoftwareX Requirement)
+## Software Metadata
 
 | Metadata element | Description |
 | :--- | :--- |
