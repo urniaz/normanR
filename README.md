@@ -32,7 +32,7 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 }
 
 # Install normanR from GitHub
-devtools::install_github("urniaz/normanR")
+devtools::install_github("urniaz/normanR", subdir = "normanR")
 ```
 
 or from CRAN
