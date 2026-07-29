@@ -26,13 +26,13 @@ The package enables researchers in environmental chemistry and ecotoxicology to 
 You can install the development version of `normanR` directly from GitHub using `devtools` or `remotes`:
 
 ```r
-# Install devtools if not already installed
-if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools")
+# Install pack if not already installed
+if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
 }
 
 # Install normanR from GitHub
-devtools::install_github("urniaz/normanR", subdir = "normanR")
+pak::pak("urniaz/normanR/normanR")
 ```
 
 or from CRAN
