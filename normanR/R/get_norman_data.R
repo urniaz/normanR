@@ -68,7 +68,7 @@
 #'   )
 #' }
 #'
-#' @export
+# @export
 get_norman_data <- function(module, parameter, value, page = NULL, format = "json") {
   
   # --- 1. Input Validation ---

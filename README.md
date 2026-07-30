@@ -15,8 +15,7 @@
 The package enables researchers in environmental chemistry and ecotoxicology to retrieve chemical substance data, ecotoxicological parameters, and EMPODAT monitoring datasets, handle batch queries across multiple identifiers, flatten complex nested API responses into clean tabular structures, and organize local JSON data files.
 
 ### Key Features
-* **Core API Integration (`get_norman_data`):** Direct querying of all main NDS modules (`susdat`, `ecotox`, `empodat`, `passive`) with strict input parameter validation.
-* **Batch Processing (`get_norman_data_multi`, `get_norman_empodat_batch_data`):** Query multiple parameters (e.g., vectors of CAS numbers) and perform multi-page EMPODAT data retrieval with automated pagination and optional disk caching.
+* **Direct querying of all main NDS modules (`susdat`, `ecotox`, `empodat`, `passive`) with strict input parameter validation with automated pagination and optional disk caching.
 * **Nested Field Extraction (`extract_norman_fields`):** Recursively search and extract nested JSON list outputs into tidy `data.frame` formats.
 * **Offline File Organization (`split_json_files_by_key`, `split_json_files_by_pattern`):** Partition bulk offline JSON files into structured subdirectories based on specific field keys or regular expressions.
 * **API Metadata Lookup (`load_api_definitions`):** Load API dictionary definitions from local JSON storage.

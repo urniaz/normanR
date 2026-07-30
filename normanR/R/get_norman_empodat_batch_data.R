@@ -12,7 +12,7 @@
 #' @return A consolidated list containing all records retrieved across all 
 #'   values and pages.
 #'
-#' @export
+# @export
 get_norman_empodat_batch_data <- function(parameter, values, saveToDir = NULL, dropMemory = FALSE) {
   
   module = "empodat"

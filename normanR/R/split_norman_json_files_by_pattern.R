@@ -7,9 +7,8 @@
 #' @param data_path Character. The element in the JSON containing the records list.
 #'
 #' @importFrom stats na.omit 
-#'
 #' @export
-split_json_files_by_pattern <- function(input_dir, output_dir, split_key, pattern = NULL, data_path = NULL) {
+split_norman_json_files_by_pattern <- function(input_dir, output_dir, split_key, pattern = NULL, data_path = NULL) {
   
   if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
   file_list <- list.files(path = input_dir, pattern = "\\.json$", full.names = TRUE)

@@ -1,8 +1,8 @@
-#' Load Norman API Definitions (Dictionary)
+#' Norman API Definitions (Dictionary)
 #'
-#' This function loads the API definitions from a JSON file.
-#' It returns a list structure that acts as a dictionary, allowing for
-#' auto-completion (Intellisense) in RStudio when accessing modules and parameters.
+#' This function provides the norman API definitions. It assigns a list structure
+#' that acts as a dictionary, allowing for auto-completion (Intellisense) in 
+#' RStudio when accessing modules and parameters.
 #'
 #' @param path A character string specifying the path to the JSON file.
 #'   If NULL, it attempts to locate 'api_definitions.json' within the package's
@@ -28,7 +28,7 @@
 #' }
 #'
 #' @export
-load_api_definitions <- function(path = NULL) {
+norman_api_definitions <- function(path = NULL) {
   
   # If path is not provided, look in the installed package directory
   if (is.null(path)) {

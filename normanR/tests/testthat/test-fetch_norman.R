@@ -16,7 +16,7 @@ test_that("get_norman_data_multi processes vector of values and handles errors g
       
       # Suppress expected warnings from tryCatch for cleaner test output
       suppressWarnings({
-        results <- get_norman_data_multi(
+        results <- fetch_norman(
           module = "susdat",
           parameter = "casrn",
           values = values,

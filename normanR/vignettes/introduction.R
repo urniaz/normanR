@@ -10,7 +10,7 @@ knitr::opts_chunk_set(
 library(normanR)
 
 # Fetch substance data by CAS number using the core function
-data_cas <- get_norman_data(
+data_cas <- fetch_norman(
   module = "susdat",
   parameter = "casrn",
   value = "1490-04-6",

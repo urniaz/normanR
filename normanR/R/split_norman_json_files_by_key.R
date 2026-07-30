@@ -20,7 +20,7 @@
 #'
 #' @importFrom stats na.omit
 #' @export
-split_json_files_by_key <- function(input_dir, output_dir, split_key, data_path = NULL) {
+split_norman_json_files_by_key <- function(input_dir, output_dir, split_key, data_path = NULL) {
   
   # 1. Setup and Validation
   if (!dir.exists(output_dir)) {
