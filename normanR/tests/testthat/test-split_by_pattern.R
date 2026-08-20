@@ -1,4 +1,4 @@
-test_that("split_norman_json_files_by_pattern splits records based on regex pattern match", {
+test_that("split_by_pattern splits records based on regex pattern match", {
   
   input_dir <- file.path(tempdir(), "test_split_pat_in")
   output_dir <- file.path(tempdir(), "test_split_pat_out")
@@ -15,7 +15,7 @@ test_that("split_norman_json_files_by_pattern splits records based on regex patt
   
   # Extract only the 4-digit year (regex: "^[0-9]{4}")
   result <- suppressMessages(
-    split_norman_json_files_by_pattern(
+    split_by_pattern(
       input_dir = input_dir,
       output_dir = output_dir,
       split_key = "Date",

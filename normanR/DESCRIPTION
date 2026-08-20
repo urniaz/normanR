@@ -1,13 +1,13 @@
 Package: normanR
-Title: Client for the Norman Network REST API
-Version: 1.7.22
+Title: Client for the 'Norman Network Database System' REST API
+Version: 1.8.77
 Authors@R: 
     c(person("Rafal", "Urniaz", comment = c(ORCID = "0000-0003-0192-2165"),
 		  email = "rafal.urniaz@cantab.net", role = c("aut", "cre")))
 Description: Offers a programmatic interface to the NORMAN Network REST API,
     facilitating the systematic query, retrieval, and parsing of environmental
     chemistry data, emerging substance registries, and mass spectrometry workflows.
-    All data structures are tailored to support downstream environmental data 
+    All data structures are tailored to support downstream environmental data
     analysis and ecotoxicological modelling.
 License: GPL-3
 Encoding: UTF-8

@@ -1,14 +1,24 @@
 #' Split JSON Files Based on Partial Key Values (Pattern Matching)
+#' 
+#' This function scans a source directory for JSON files, loads them, and splits 
+#' each file into multiple smaller JSON files based on the partial key values
+#' (pattern matching) of a specified key. Each unique value results in a separate file.
 #'
 #' @param input_dir Character. Path to the folder containing source JSON files.
 #' @param output_dir Character. Path to the folder where output files will be saved.
 #' @param split_key Character. The JSON key to inspect (e.g., "Sampling date").
 #' @param pattern Character (Regex). A pattern to extract. If NULL, splits by full value.
 #' @param data_path Character. The element in the JSON containing the records list.
+#' 
+#' @return Logical. Returns TRUE if the operation completes successfully.
+#'
+#' @details 
+#' The function creates the output directory if it does not exist. Filenames are 
+#' generated using the pattern: original_name.json.
 #'
 #' @importFrom stats na.omit 
 #' @export
-split_norman_json_files_by_pattern <- function(input_dir, output_dir, split_key, pattern = NULL, data_path = NULL) {
+split_by_pattern <- function(input_dir, output_dir, split_key, pattern = NULL, data_path = NULL) {
   
   if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
   file_list <- list.files(path = input_dir, pattern = "\\.json$", full.names = TRUE)

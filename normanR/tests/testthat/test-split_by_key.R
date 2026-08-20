@@ -1,4 +1,4 @@
-test_that("split_norman_json_files_by_key correctly splits JSON records into folders by unique keys", {
+test_that("split_by_key correctly splits JSON records into folders by unique keys", {
   
   # Create temporary input and output directories
   input_dir <- file.path(tempdir(), "test_split_key_in")
@@ -18,7 +18,7 @@ test_that("split_norman_json_files_by_key correctly splits JSON records into fol
   
   # Execute splitting
   result <- suppressMessages(
-    split_norman_json_files_by_key(
+    split_by_key(
       input_dir = input_dir,
       output_dir = output_dir,
       split_key = "Country",

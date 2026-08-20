@@ -3,6 +3,6 @@
 export(extract_norman_fields)
 export(fetch_norman)
 export(norman_api_definitions)
-export(split_norman_json_files_by_key)
-export(split_norman_json_files_by_pattern)
+export(split_by_key)
+export(split_by_pattern)
 importFrom(stats,na.omit)
